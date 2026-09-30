@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="fr" data-lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Ndeye Sira Dia — Data &amp; IA</title>
+  <meta name="description" content="Portfolio de Ndeye Sira Dia — Étudiante en Licence Informatique, spécialisation Big Data, au DIT. Pipelines ELT, architectures distribuées, RAG, machine learning et microservices.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,600;0,700;1,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="progress"></div>
+
+<!-- La barre de navigation -->
+<header class="nav">
+  <div class="nav-inner">
+    <nav class="nav-links">
+      <a href="#about" data-i18n="nav-about">À propos</a>
+      <a href="#education" data-i18n="nav-education">Parcours</a>
+      <a href="#projects" data-i18n="nav-projects">Projets</a>
+      <a href="#stack" data-i18n="nav-stack">Stack</a>
+      <a href="#autres" data-i18n="nav-autres">Autres</a>
+      <a href="#contact" data-i18n="nav-contact">Contact</a>
+    </nav>
+    <div class="nav-tools">
+      <button class="tool-btn" id="theme-toggle" type="button" aria-pressed="false" title="Changer de thème">☾</button>
+      <button class="tool-btn" id="lang-toggle" type="button" title="Français / English">EN</button>
+    </div>
+  </div>
+</header>
+
+<!-- La section hero -->
+<section class="hero" id="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-text">
+        <h1 class="grad-text">Ndeye Sira Dia</h1>
+        <p class="lede" data-i18n="hero-lede"><strong>Des données brutes aux systèmes qui les rendent utiles.</strong><br>Pipelines, analyse, machine learning et projets concrets : je construis en apprenant, et j'apprends surtout en construisant.</p>
+        <p class="role" data-i18n="hero-role">Future ingénieure IA · Dakar Institute of Technology</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#projects" data-i18n="cta-projects">Voir mes projets</a>
+          <!-- Je remplace ce bouton par un lien vers mon CV -->
+          <a class="btn btn-ghost" href="assets/CV_Ndeye_Sira_Dia.pdf" target="_blank" data-i18n="cta-cv">Télécharger mon CV</a>
+        </div>
+      </div>
+
+      <div class="hero-avatar">
+        <img src="assets/avatar.png" alt="Avatar de Sira" class="avatar-img" id="avatar-img" title="clique-moi">
+        <div class="avatar-bubble" id="avatar-bubble-hero"></div>
+      </div>
+    </div>
+
+    <!-- Quelques statistiques -->
+    <div class="stats" id="stats">
+      <div class="stat">
+        <div class="num" data-target="5">0</div>
+        <div class="label" data-i18n="stat-projects">PROJETS PUBLIÉS</div>
+      </div>
+      <div class="stat">
+        <div class="num" data-target="12">0</div>
+        <div class="label" data-i18n="stat-tech">TECHNOLOGIES</div>
+      </div>
+      <div class="stat">
+        <div class="num" data-target="3">0</div>
+        <div class="label" data-i18n="stat-langues">LANGUES PARLÉES (EN/FR/WO)</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- La section À propos -->
+<section id="about">
+  <div class="wrap about-grid">
+    <h2 data-i18n="about-title">À propos</h2>
+    <div class="about-copy">
+      <p data-i18n="about-p1">
+        Je m'intéresse à la donnée dans ce qu'elle a de plus concret : ce qui se passe avant qu'elle devienne un graphique, un modèle ou une décision.
+      </p>
+      <p data-i18n="about-p2">
+        Au fil de ma formation en Informatique, avec une spécialisation en Big Data, j'ai exploré différentes étapes de cette chaîne : collecte, traitement, pipelines, bases de données, analyse, visualisation et machine learning.
+      </p>
+      <p data-i18n="about-p3">
+        Mes projets sont avant tout une façon d'apprendre en faisant. Une idée simple peut rapidement devenir un problème d'architecture, de données ou de code — et c'est souvent là que ça devient intéressant. J'aime comprendre comment les choses fonctionnent, chercher pourquoi elles ne fonctionnent plus, puis construire une solution qui tient réellement la route.
+      </p>
+      <p class="signature" data-i18n="about-sig">— apprendre, construire, comprendre, recommencer.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Education et Certifications -->
+<section id="education">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 data-i18n="education-title">Parcours &amp; certifications</h2>
+    </div>
+
+    <div class="timeline">
+      <div class="tl-item" style="--accent:#006989">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <div class="tl-date" data-i18n="edu-status">3ᵉ année · En cours</div>
+          <h3 data-i18n="edu-degree">Licence Informatique — spécialisation Big Data</h3>
+          <p data-i18n="edu-school">
+            Dakar Institute of Technology (DIT). Une formation orientée pratique, avec des projets autour de la donnée, du développement, des bases de données, du machine learning et de l'architecture des systèmes.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="cert-subhead" data-i18n="cert-subhead">Certifications</h3>
+    <div class="cert-row">
+      <a class="cert-card" href="https://www.credly.com/users/ndeye-sira-dia/badges" target="_blank" rel="noopener">
+        <div class="cert-icon-box">AWS</div>
+        <div>
+          <strong data-i18n="cert-aws-title">AWS Educate · 2025</strong>
+          <p data-i18n="cert-aws-desc">Badges de formation autour du Cloud : Compute, Databases, Networking, Security, Serverless et Storage.</p>
+          <span class="cert-link" data-i18n="cert-link">Voir les badges ↗</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- La section Projets -->
+<section id="projects">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 data-i18n="projects-title">Projets sélectionnés</h2>
+      <!-- <span class="count">05 projets</span> -->
+    </div>
+
+    <!-- Filtres par catégorie -->
+    <div class="projects-filter-bar">
+      <button class="filter-btn is-active" type="button" data-filter="all" data-i18n="filter-all">Tous les projets</button>
+      <button class="filter-btn" type="button" data-filter="data-eng" data-i18n="filter-data-eng">Data Engineering &amp; ELT</button>
+      <button class="filter-btn" type="button" data-filter="ai-rag" data-i18n="filter-ai-rag">IA &amp; RAG</button>
+      <button class="filter-btn" type="button" data-filter="systems" data-i18n="filter-systems">Systèmes &amp; Microservices</button>
+      <button class="filter-btn" type="button" data-filter="analytics" data-i18n="filter-analytics">Data Analytics &amp; EDA</button>
+    </div>
+
+    <!-- Liste des 5 projets -->
+    <div class="projects-list" id="projects-list">
+
+      <!-- Projet 1 : Mobile Money Pipeline -->
+      <a class="project-card" data-category="data-eng" style="--accent:#006989" href="https://github.com/Sirad12/mobile_money_pipeline" target="_blank" rel="noopener">
+        <div class="project-meta">
+          <div class="project-tag"><span class="dot"></span><span data-i18n="p1-tag">Data engineering · ELT</span></div>
+        </div>
+        <div class="project-body">
+          <h3><span data-i18n="p1-title">Mobile Money Data Pipeline</span> <span class="gh-arrow">↗</span></h3>
+          <p data-i18n="p1-desc">Pipeline batch/ELT sur des transactions mobile money simulées (Orange Money, Wave) au Sénégal : génération de données réalistes, orchestration Airflow, transformations et tests de qualité dbt, entrepôt PostgreSQL, dashboard Metabase.</p>
+          <div class="stack-tags">
+            <span>Python</span><span>Airflow</span><span>dbt</span><span>PostgreSQL</span><span>Metabase</span><span>Docker</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Projet 2 : Gestion de bibliothèque -->
+      <a class="project-card" data-category="systems" style="--accent:#D99A2B" href="https://github.com/Sirad12/Bibliotheque" target="_blank" rel="noopener">
+        <div class="project-meta">
+          <div class="project-tag"><span class="dot"></span><span data-i18n="p2-tag">Architecture · Microservices</span></div>
+        </div>
+        <div class="project-body">
+          <h3><span data-i18n="p2-title">Plateforme de gestion de bibliothèque</span> <span class="gh-arrow">↗</span></h3>
+          <p data-i18n="p2-desc">Architecture microservices (frontend React, API Livres/Utilisateurs/Emprunts, PostgreSQL), orchestrée via Docker Compose avec intégration continue Jenkins.</p>
+          <div class="stack-tags">
+            <span>Flask</span><span>FastAPI</span><span>React</span><span>PostgreSQL</span><span>Docker</span><span>Jenkins</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Projet 3 : Détection d'intrusion -->
+      <a class="project-card" data-category="data-eng" style="--accent:#C2622D" href="https://github.com/Sirad12/detection-intrusion-temps-reel" target="_blank" rel="noopener">
+        <div class="project-meta">
+          <div class="project-tag"><span class="dot"></span><span data-i18n="p3-tag">Streaming · Sécurité</span></div>
+        </div>
+        <div class="project-body">
+          <h3><span data-i18n="p3-title">Détection d'intrusion en temps réel</span> <span class="gh-arrow">↗</span></h3>
+          <p data-i18n="p3-desc">Système de surveillance réseau permettant de détecter des activités suspectes et de générer des alertes en temps réel, sur un flux de données continu.</p>
+          <div class="stack-tags">
+            <span>Python</span><span>Kafka</span><span>Docker</span><span>Streamlit</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Projet 4 : Chatbot RAG Passeports -->
+      <a class="project-card" data-category="ai-rag" style="--accent:#4FB6D6" href="https://github.com/Sirad12/Chatbot-BDPP" target="_blank" rel="noopener">
+        <div class="project-meta">
+          <div class="project-tag"><span class="dot"></span><span data-i18n="p4-tag">NLP · RAG</span></div>
+        </div>
+        <div class="project-body">
+          <h3><span data-i18n="p4-title">Chatbot RAG — Bureau des Passeports du Sénégal</span> <span class="gh-arrow">↗</span></h3>
+          <p data-i18n="p4-desc">Assistant conversationnel basé sur une architecture RAG répondant aux questions administratives sur les démarches de passeport : embeddings et génération via l'API Gemini, retrieval vectoriel avec ChromaDB, API FastAPI conteneurisée.</p>
+          <div class="stack-tags">
+            <span>Python</span><span>FastAPI</span><span>ChromaDB</span><span>Gemini API</span><span>Docker</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Projet 5 : Nettoyage et analyse retail -->
+      <a class="project-card" data-category="analytics" style="--accent:#8A6BAE" href="https://github.com/Sirad12/retail-sales-data-cleaning" target="_blank" rel="noopener">
+        <div class="project-meta">
+          <div class="project-tag"><span class="dot"></span><span data-i18n="p5-tag">Data cleaning · EDA</span></div>
+        </div>
+        <div class="project-body">
+          <h3><span data-i18n="p5-title">Nettoyage et analyse de données retail</span> <span class="gh-arrow">↗</span></h3>
+          <p data-i18n="p5-desc">Nettoyage complet d'un dataset retail volontairement « sale » : déduction logique des valeurs manquantes par mapping et relations métier plutôt qu'imputation systématique, puis analyse exploratoire pour en extraire des insights business.</p>
+          <div class="stack-tags">
+            <span>Python</span><span>Pandas</span><span>Seaborn</span><span>Jupyter</span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+
+    <!-- Pour voir tous mes dépôts Github -->
+    <div class="github-banner">
+      <div class="github-banner-content">
+        <span class="github-banner-badge" data-i18n="gh-banner-badge">Open Source &amp; Exploration</span>
+        <h3 data-i18n="gh-banner-title">Envie d'explorer tous mes dépôts ?</h3>
+        <p data-i18n="gh-banner-desc">
+          Découvrez l'ensemble de mes travaux, scripts utilitaires, pipelines et projets collaboratifs directement sur mon profil GitHub.
+        </p>
+      </div>
+      <a class="btn btn-primary" href="https://github.com/Sirad12?tab=repositories" target="_blank" rel="noopener" data-i18n="gh-banner-cta">
+        Voir tout mon GitHub (@Sirad12) ↗
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- La section Stack technique -->
+<section id="stack">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 data-i18n="stack-title">Stack technique</h2>
+    </div>
+
+    <div class="stack-grid">
+      <div class="stack-col" style="--accent:#006989">
+        <h4>DATA &amp; BIG DATA</h4>
+        <div class="pill-row">
+          <span class="pill">Apache Kafka</span>
+          <span class="pill">Apache Airflow</span>
+          <span class="pill">dbt</span>
+          <span class="pill">MinIO</span>
+          <span class="pill">Pandas</span>
+        </div>
+      </div>
+
+      <div class="stack-col" style="--accent:#D99A2B">
+        <h4>IA / ML</h4>
+        <div class="pill-row">
+          <span class="pill">YOLO</span>
+          <span class="pill">Scikit-learn</span>
+          <span class="pill">RAG</span>
+          <span class="pill">Gemini API</span>
+          <span class="pill">ChromaDB</span>
+        </div>
+      </div>
+
+      <div class="stack-col" style="--accent:#C2622D">
+        <h4>BACKEND &amp; INFRA</h4>
+        <div class="pill-row">
+          <span class="pill">PostgreSQL</span>
+          <span class="pill">MySQL</span>
+          <span class="pill">Docker</span>
+          <span class="pill">Flask</span>
+          <span class="pill">FastAPI</span>
+          <span class="pill">Jenkins</span>
+        </div>
+      </div>
+
+      <div class="stack-col" style="--accent:#4FB6D6">
+        <h4>VISUALISATION &amp; BI</h4>
+        <div class="pill-row">
+          <span class="pill">Tableau</span>
+          <span class="pill">Metabase</span>
+          <span class="pill">Streamlit</span>
+          <span class="pill">Plotly Dash</span>
+          <span class="pill">Matplotlib</span>
+          <span class="pill">Seaborn</span>
+        </div>
+      </div>
+
+      <div class="stack-col" style="--accent:#D99A2B">
+        <h4>LANGUAGES &amp; WEB </h4>
+        <div class="pill-row">
+          <span class="pill">Python</span>
+          <span class="pill">SQL</span>
+          <span class="pill">R</span>
+          <span class="pill">JavaScript</span>
+          <span class="pill">HTML</span>
+          <span class="pill">CSS</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Ce que je fais en dehors du code (hobbies) -->
+<section id="autres">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 data-i18n="autres-title">En dehors du code</h2>
+    </div>
+    <p class="section-intro" data-i18n="autres-note">
+      Je passe aussi du temps à faire des choses qui n'ont absolument rien à voir avec une ligne de commande.
+    </p>
+
+    <div class="studio">
+      <div class="studio-tabs" role="tablist">
+        <button class="studio-tab is-active" type="button" role="tab" data-tab="cook" aria-selected="true">
+          <span aria-hidden="true">🍳</span><b data-i18n="hobby-cook">Cuisiner</b>
+        </button>
+        <button class="studio-tab" type="button" role="tab" data-tab="knit" aria-selected="false">
+          <span aria-hidden="true">🧶</span><b data-i18n="hobby-knit">Tricoter</b>
+        </button>
+        <button class="studio-tab" type="button" role="tab" data-tab="color" aria-selected="false">
+          <span aria-hidden="true">🎨</span><b data-i18n="hobby-color">Colorier</b>
+        </button>
+      </div>
+
+      <!-- Cuisiner le Thiéboudienne -->
+      <div class="studio-panel is-active" id="panel-cook" role="tabpanel">
+        <p class="studio-hint" data-i18n="cook-hint">Compose ton thiéboudienne : clique sur les ingrédients.</p>
+        <div class="cook-stage">
+          <div class="pot-wrap">
+            <div class="steam" aria-hidden="true"><i></i><i></i><i></i></div>
+            <div class="pot"><div class="pot-content" id="pot-content"></div></div>
+          </div>
+          <div class="cook-side">
+            <div class="ingredients" id="ingredients">
+              <button type="button" data-ing="🐟" aria-label="poisson" title="Poisson">🐟</button>
+              <button type="button" data-ing="🥕" aria-label="carotte" title="Carotte">🥕</button>
+              <button type="button" data-ing="🍅" aria-label="tomate" title="Tomate">🍅</button>
+              <button type="button" data-ing="🧅" aria-label="oignon" title="Oignon">🧅</button>
+              <button type="button" data-ing="🌶️" aria-label="piment" title="Piment">🌶️</button>
+              <button type="button" data-ing="🍚" aria-label="riz" title="Riz">🍚</button>
+            </div>
+            <p class="studio-status" id="cook-status" aria-live="polite"></p>
+            <button class="studio-reset" type="button" id="cook-reset" data-i18n="reset-cook">Recommencer</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tricoter une écharpe -->
+      <div class="studio-panel" id="panel-knit" role="tabpanel">
+        <p class="studio-hint" data-i18n="knit-hint">Choisis une laine, puis clique sur l'écharpe pour tricoter un rang.</p>
+        <div class="knit-stage">
+          <div class="yarn-picker" id="yarn-picker">
+            <button type="button" class="is-active" data-yarn="var(--teal)" style="--c:var(--teal)" aria-label="Laine bleue" title="Bleu"></button>
+            <button type="button" data-yarn="var(--ember)" style="--c:var(--ember)" aria-label="Laine orange" title="Orange"></button>
+            <button type="button" data-yarn="var(--gold)" style="--c:var(--gold)" aria-label="Laine jaune" title="Jaune"></button>
+            <button type="button" data-yarn="var(--purple)" style="--c:var(--purple)" aria-label="Laine violette" title="Violet"></button>
+          </div>
+          <div class="scarf" id="scarf" tabindex="0" role="button" aria-label="Tricoter un rang"></div>
+          <p class="studio-status" id="knit-status" aria-live="polite"></p>
+          <button class="studio-reset" type="button" id="knit-reset" data-i18n="reset-knit">Recommencer</button>
+        </div>
+      </div>
+
+      <!-- Coloriage paysage Baobab -->
+      <div class="studio-panel" id="panel-color" role="tabpanel">
+        <p class="studio-hint" data-i18n="color-hint">Choisis une couleur, puis clique sur une zone du dessin pour la colorier.</p>
+        <div class="swatches" id="swatches">
+          <button type="button" class="is-active" data-fill="var(--teal)" style="--c:var(--teal)" aria-label="Bleu"></button>
+          <button type="button" data-fill="var(--ember)" style="--c:var(--ember)" aria-label="Orange"></button>
+          <button type="button" data-fill="var(--gold)" style="--c:var(--gold)" aria-label="Jaune"></button>
+          <button type="button" data-fill="var(--purple)" style="--c:var(--purple)" aria-label="Violet"></button>
+          <button type="button" data-fill="var(--sky)" style="--c:var(--sky)" aria-label="Ciel"></button>
+          <button type="button" data-fill="#6BAE75" style="--c:#6BAE75" aria-label="Vert"></button>
+          <button type="button" data-fill="#E58BA6" style="--c:#E58BA6" aria-label="Rose"></button>
+          <button type="button" data-fill="" class="swatch-erase" aria-label="Gomme" title="Effacer une zone">🧽</button>
+        </div>
+        <svg class="coloring" id="coloring" viewBox="0 0 400 260" role="img" aria-label="Paysage à colorier : baobab, soleil, fleurs">
+          <rect class="reg" x="2" y="2" width="396" height="256" rx="10"/>
+          <circle class="reg" cx="322" cy="62" r="34"/>
+          <path class="reg" d="M40 82 q-4-24 24-24 q8-20 34-12 q26-4 28 22 q20 2 16 20 H40 q-14 0 0-6z"/>
+          <path class="reg" d="M2 178 Q100 112 220 162 T398 148 V250 a8 8 0 0 1-8 8 H10 a8 8 0 0 1-8-8z"/>
+          <path class="reg" d="M2 206 Q160 172 398 208 V250 a8 8 0 0 1-8 8 H10 a8 8 0 0 1-8-8z"/>
+          <path class="reg" d="M150 214 C170 176 176 134 172 102 L208 102 C205 134 214 176 236 214 Z"/>
+          <circle class="reg" cx="166" cy="92" r="32"/>
+          <circle class="reg" cx="222" cy="94" r="30"/>
+          <circle class="reg" cx="194" cy="70" r="36"/>
+          <path class="stem" d="M78 236 V214"/>
+          <circle class="reg" cx="78" cy="204" r="14"/>
+          <circle class="reg" cx="78" cy="204" r="6"/>
+          <path class="stem" d="M322 240 V222"/>
+          <circle class="reg" cx="322" cy="212" r="14"/>
+          <circle class="reg" cx="322" cy="212" r="6"/>
+        </svg>
+        <p class="studio-status" id="color-status" aria-live="polite"></p>
+        <button class="studio-reset" type="button" id="color-reset" data-i18n="reset-color">Effacer les couleurs</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- La section Contact -->
+<section id="contact" class="contact">
+  <div class="wrap">
+    <h2 data-i18n="contact-title">Une idée, un projet ou simplement envie d'échanger ?</h2>
+    <p data-i18n="contact-p">
+      Je recherche actuellement un stage en Data / Big Data et reste ouverte aux projets, collaborations et discussions qui peuvent m'apprendre quelque chose de nouveau.
+    </p>
+    <div class="contact-links">
+      <a class="btn btn-primary" href="mailto:siradia167@gmail.com" data-i18n="cta-email">Écrire un email</a>
+      <button class="copy-email-btn" id="copy-email-btn" type="button">
+        <span>📋</span>
+        <span data-i18n="copy-email">Copier l'email</span>
+      </button>
+      <a class="btn btn-ghost" href="https://linkedin.com/in/sira-dia" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn btn-ghost" href="https://github.com/Sirad12" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</section>
+
+<!-- Message de feedback pour le presse-papier -->
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<!-- Enfin la section pied de page (footer)-->
+<footer id="site-footer">
+  <div class="footer-avatar">
+    <img src="assets/avatar.png" alt="Avatar de Sira" class="avatar-img">
+    <div class="avatar-bubble" id="avatar-bubble-footer"></div>
+  </div>
+  <span data-i18n="footer">Dakar, Sénégal · Ndeye Sira Dia</span>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
