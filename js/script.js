@@ -300,30 +300,39 @@
 
   // Compteur de stats
   var statEls = document.querySelectorAll('.stat .num');
-  var statsAnimated = false;
-  function animateStats() {
-    if (statsAnimated) return;
-    statsAnimated = true;
-    statEls.forEach(function(el) {
-      var target = parseInt(el.getAttribute('data-target'), 10);
-      if (isNaN(target)) return; 
+var statsAnimated = false;
 
-      if (reduced) { el.textContent = target + '+'; return; }
-      var startTime = null, duration = 900;
-      function step(ts) {
-        if (!startTime) startTime = ts;
-        var p = Math.min((ts - startTime) / duration, 1);
-        var current = Math.floor(p * target);
-        
-  
-        el.textContent = target === 15 ? current + '+' : current;
-        
-        if (p < 1) requestAnimationFrame(step);
-        else el.textContent = target === 15 ? target + '+' : target;
+function animateStats() {
+  if (statsAnimated) return;
+  statsAnimated = true;
+  statEls.forEach(function(el) {
+    var target = parseInt(el.getAttribute('data-target'), 10);
+    if (isNaN(target)) return;
+
+    
+    if (reduced) { 
+      el.textContent = target === 15 ? target + '+' : target; 
+      return; 
+    }
+
+    var startTime = null, duration = 900;
+    function step(ts) {
+      if (!startTime) startTime = ts;
+      var p = Math.min((ts - startTime) / duration, 1);
+      var current = Math.floor(p * target);
+
+      // On ajoute le '+' uniquement pour la cible à 15
+      el.textContent = target === 15 ? current + '+' : current;
+
+      if (p < 1) {
+        requestAnimationFrame(step);
+      } else {
+        el.textContent = target === 15 ? target + '+' : target;
       }
-      requestAnimationFrame(step);
-    });
-  }
+    }
+    requestAnimationFrame(step);
+  });
+}
 
   var statsSection = document.getElementById('stats');
   if ('IntersectionObserver' in window && statsSection) {
