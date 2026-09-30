@@ -30,7 +30,7 @@
     // Stats
     "stat-projects": { fr: "PROJETS PUBLIÉS", en: "PUBLISHED PROJECTS" },
     "stat-tech": { fr: "TECHNOLOGIES", en: "TECHNOLOGIES" },
-    "stat-langues": { fr: "FR (COURANT) · EN (B2) · WOLOF (MATERNELLE)", en: "FRENCH (FLUENT) · ENGLISH (B2) · WOLOF (NATIVE)"},
+    "stat-langues": { fr: "LANGUES PARLÉES (EN/FR/WO)", en: "LANGUAGES SPOKEN (EN/FR/WO)" },
 
     // À propos
     "about-title": { fr: "À propos", en: "About" },
