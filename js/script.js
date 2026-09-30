@@ -30,7 +30,7 @@
     // Stats
     "stat-projects": { fr: "PROJETS PUBLIÉS", en: "PUBLISHED PROJECTS" },
     "stat-tech": { fr: "TECHNOLOGIES", en: "TECHNOLOGIES" },
-    "stat-langues": { fr: "LANGUES PARLÉES (EN/FR/WO)", en: "LANGUAGES SPOKEN (EN/FR/WO)" },
+    "stat-langues": { fr: "FR (COURANT) · EN (B2) · WOLOF (MATERNELLE)", en: "FRENCH (FLUENT) · ENGLISH (B2) · WOLOF (NATIVE)"},
 
     // À propos
     "about-title": { fr: "À propos", en: "About" },
@@ -306,14 +306,20 @@
     statsAnimated = true;
     statEls.forEach(function(el) {
       var target = parseInt(el.getAttribute('data-target'), 10);
-      if (reduced) { el.textContent = target; return; }
+      if (isNaN(target)) return; 
+
+      if (reduced) { el.textContent = target + '+'; return; }
       var startTime = null, duration = 900;
       function step(ts) {
         if (!startTime) startTime = ts;
         var p = Math.min((ts - startTime) / duration, 1);
-        el.textContent = Math.floor(p * target);
+        var current = Math.floor(p * target);
+        
+  
+        el.textContent = target === 15 ? current + '+' : current;
+        
         if (p < 1) requestAnimationFrame(step);
-        else el.textContent = target;
+        else el.textContent = target === 15 ? target + '+' : target;
       }
       requestAnimationFrame(step);
     });
